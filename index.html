@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venda de Hambúrgueres</title>
+  <link rel="stylesheet" href="css/proje2.css">
+  <script src="js/index.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Logo da Hamburgueria">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Cadastro</a></li>
+        <li><a href="carrinho.html">Carrinho</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h1>Bem-vindo à Hamburgueria Online!</h1>
+      <p>Confira nossos deliciosos hambúrgueres:</p>
+      <div id="produtos">
+        <!-- Produtos gerados dinamicamente -->
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Hamburgueria</p>
+  </footer>
+  <!-- Menu de Preferências -->
+  <button id="preferences-button" class="preferences-button">Preferências</button>
+  <div id="preferences-menu" class="preferences-menu">
+    <div class="preferences-content">
+      <h3>Preferências</h3>
+      <label for="theme">Tema:</label>
+      <select id="theme" name="theme">
+        <option value="light">Claro</option>
+        <option value="dark">Escuro</option>
+      </select>
+      <label for="language">Idioma:</label>
+      <select id="language" name="language">
+        <option value="pt-br">Português</option>
+        <option value="en">Inglês</option>
+        <option value="es">Espanhol</option>
+      </select>
+      <button id="close-preferences" class="close-preferences">Fechar</button>
+    </div>
+  </div>
+</body>
+</html>

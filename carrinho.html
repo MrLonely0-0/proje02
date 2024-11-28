@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/preferencias.js" defer></script>
+  <script src="js/carrinho.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Logo da Hamburgueria">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="carrinho">
+      <h1>Seu Carrinho</h1>
+      <div id="itens-carrinho">
+        <!-- Itens do carrinho aparecem aqui -->
+      </div>
+      <button id="finalizar-compra">Finalizar Compra</button>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Hamburgueria</p>
+  </footer>
+  <!-- Menu de Preferências -->
+  <button id="preferences-button" class="preferences-button">Preferências</button>
+  <div id="preferences-menu" class="preferences-menu">
+    <div class="preferences-content">
+      <h3>Preferências</h3>
+      <label for="theme">Tema:</label>
+      <select id="theme" name="theme">
+        <option value="light">Claro</option>
+        <option value="dark">Escuro</option>
+      </select>
+      <label for="language">Idioma:</label>
+      <select id="language" name="language">
+        <option value="pt-br">Português</option>
+        <option value="en">Inglês</option>
+        <option value="es">Espanhol</option>
+      </select>
+      <button id="close-preferences" class="close-preferences">Fechar</button>
+    </div>
+  </div>
+</body>
+</html>
