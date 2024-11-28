@@ -1,0 +1,189 @@
+/* Resetando o estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+  }
+  
+    /* Estilo para a logo */
+  .logo img {
+    width: 50px;           /* Largura ajustável da logo */
+    height: 50px;          /* Altura ajustável */
+    border-radius: 50%;    /* Deixa a imagem circular */
+    object-fit: cover;     /* Garante o ajuste correto dentro do círculo */
+    display: block;        /* Garante que se comporte como um bloco */
+  }
+
+  /* Ajuste da navegação para incluir logo */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  /* Espaçamento ao redor da logo para evitar sobreposição */
+  .logo {
+    margin-right: 20px;
+  }
+
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger .bar {
+    width: 30px;
+    height: 3px;
+    background: white;
+  }
+  
+  /* Estilos principais */
+  main {
+    padding: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+  }
+  
+  /* Estilos do Menu Flutuante */
+  .preferences-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .preferences-button:hover {
+    background-color: #444;
+  }
+  
+  /* O menu de preferências, oculto por padrão */
+  .preferences-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    color: #333;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
+  }
+  
+  .preferences-menu.open {
+    transform: translateX(0);
+  }
+  
+  .preferences-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .preferences-content label {
+    margin-bottom: 10px;
+  }
+  
+  .preferences-content select,
+  .preferences-content button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #close-preferences {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #close-preferences:hover {
+    background-color: #c53030;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilos Responsivos */
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 20px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
